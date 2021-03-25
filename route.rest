@@ -1,0 +1,38 @@
+GET http://localhost:8000/subscribers
+
+###
+GET http://localhost:8000/subscribers/605b12695859bf1674f07a6d
+
+###
+POST http://localhost:8000/subscribers
+Content-Type: application/json
+
+{
+	"matricule": 10021,
+	"lastName" : "FOTSO",
+	"firstName" : "DJEMO",
+	"email" : "aureli@freelance.com",
+	"phone" : "237 6 90 00 00 00",
+	"address": [{
+		"street": "ETOA MEKI",
+		"postalCode": "92300",
+		"city": "YAOUNDE",
+		"country": "CAMEROUN"
+	}]
+}
+
+###
+DELETE http://localhost:8000/subscribers/605b12695859bf1674f07a6d
+
+###
+PATCH http://localhost:8000/subscribers/605b290f2da2b22f00bfc23c
+Content-Type: application/json
+
+{
+	"matricule": 1111,
+	"lastName" : "sasuke",
+	"firstName" : "karma",
+	"email" : "aureli@freelance.com",
+	"phone" : "237 6 90 00 00 00"
+    
+}
